@@ -1,0 +1,80 @@
+﻿body {
+    color:#FFF;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    background-color:#CCC;
+}
+
+h1 {
+    text-align:center;
+    padding:1% 0%;
+    width:100%;
+    background-color:#0EA353;
+    margin:0px;
+}
+
+p {
+    margin:1%;
+    min-height:75px;
+    font-size:1.2em;
+}
+
+.speedTest {
+    cursor:pointer;
+    width:99%;
+    background-color:#FFD24D;
+    border-left:none;
+    border-top:none;
+    border-bottom:3px solid #E5BD46;
+    border-right:3px solid #E5BD46;
+    font-size:1.7em;
+    color:#3d3d3d;
+    text-align:center;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+    .speedTest:hover {
+        background-color:#FFDC60;
+    }
+
+    .speedTest:active {
+        background-color:#E3C456;
+        border-bottom:3px solid #D1B44F;
+        border-right:3px solid #D1B44F;
+    }
+
+.formBox {
+    width:90%;
+    max-width:350px;
+    background-color:#333333;
+    margin:8% auto;
+    padding:15px;
+    min-height:320px;
+    border-radius:2%;
+}
+
+.latencyLabel {
+    color:#48B1FF;
+    margin-top:5%;
+    display:inline-block;
+    font-size:1.4em;
+}
+
+.speedLabel {
+    color:#F05444;
+    margin-top:2%;
+    display:inline-block;
+    font-size:1.4em;
+}
+
+.iconLoad {
+    display:none;
+}
+
+
+@media screen and (min-width: 35em) {
+    body {
+        font-size: 1.1em;
+    }
+}
