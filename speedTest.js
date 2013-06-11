@@ -38,10 +38,10 @@
 
     function setImages() {
         if (speedMbps > 900) {
-            $(".speedLoadImage").attr('src', 'image2.jpg');
+            $(".speedLoadImage").attr('src', $(".speedLoadImage").data("high-res"));
         }
         else {
-            $(".speedLoadImage").attr('src', 'image.png');
+            return;
         }
     }
 
