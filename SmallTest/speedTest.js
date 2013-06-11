@@ -1,11 +1,4 @@
 ﻿$(document).ready(function () {
-    var MOBILE = false;
-    var BROADBAND = false;
-
-    var speedBps;
-    var speedKbps
-    var speedMbps
-
     var startTime, endTime;
     
     $("#SpeedTest").click(function () {
@@ -20,36 +13,22 @@
         startTime = (new Date()).getTime();
         download.onload = function () {
             endTime = (new Date()).getTime();
-            getDownloadResults();
-            showDownloadResultes();
-            setImages();
+            showDownloadResults();
             $("#SpeedTest").html("Test");
         }
     }
 
-    function getDownloadResults() {
+    function showDownloadResults() {
         var downloadSize = [236197]; // Bytes for large file
         var duration = (endTime - startTime) / 1000;
         var bitsLoaded = downloadSize * 8;
-        speedBps = (bitsLoaded / duration).toFixed(3);
-        speedKbps = (speedBps / 1024).toFixed(3);
-        speedMbps = (speedKbps / 1024).toFixed(3);
-    }
-
-    function setImages() {
-        if (speedMbps > 900) {
-            $(".speedLoadImage").attr('src', 'image2.jpg');
-        }
-        else {
-            $(".speedLoadImage").attr('src', 'image.png');
-        }
-    }
-
-    function showDownloadResultes() {
+        var speedBps = (bitsLoaded / duration).toFixed(3);
+        var speedKbps = (speedBps / 1024).toFixed(3);
+        var speedMbps = (speedKbps / 1024).toFixed(3);
         $("#DownloadSpeed").html(
-       speedBps + " bps <br />" +
-       speedKbps + " Kbps <br />" +
-       speedMbps + " Mbps <br />");
+               speedBps + " bps <br />" +
+               speedKbps + " Kbps <br />" +
+               speedMbps + " Mbps <br />");
     }
 
     function getStartLatencySpeed() {
