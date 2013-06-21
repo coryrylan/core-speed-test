@@ -14,5 +14,5 @@ where the code is hosted will effect the results.</p>
 <h2>License</h2>
 <p>
 This code is free to use under the MIT License.
-read more at <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>
+Read more at <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>
 </p>
