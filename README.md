@@ -10,3 +10,9 @@ application decisions. Also to note this gives a estimate speed based on the con
 where the code is hosted will effect the results.</p>
 
 <p>Please feel free to offer sugestions or contribute. </p>
+
+<h2>License</h2>
+<p>
+This code is free to use under the MIT License.
+read more at <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>
+</p>
