@@ -1,7 +1,6 @@
 ﻿/* 
-    Cory Bateman 
-    www.webdesignis.me 
-    MIT License 
+    Cory Bateman http://www.webdesignis.me 
+    MIT License http://opensource.org/licenses/MIT 
 */
 
 $(document).ready(function () {
