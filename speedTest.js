@@ -1,4 +1,10 @@
-﻿$(document).ready(function () {
+﻿/* 
+    Cory Bateman 
+    www.webdesignis.me 
+    MIT License 
+*/
+
+$(document).ready(function () {
     var startTime, endTime;
     
     $("#SpeedTest").click(function () {
