@@ -1,8 +1,7 @@
-﻿/* 
+﻿/*! 
     Cory Bateman http://www.webdesignis.me 
     MIT License http://opensource.org/licenses/MIT 
 */
-
 $(document).ready(function () {
     var startTime, endTime;
     
