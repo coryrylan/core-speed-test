@@ -9,7 +9,9 @@
     var startTime, endTime;
     
     $("#SpeedTest").click(function () {
-        getStartLatencySpeed(getDownloadSpeed);      
+        getStartLatencySpeed(getDownloadSpeed);
+
+        return false;
     });
 
     function getDownloadSpeed() {
@@ -59,7 +61,7 @@
         var startLatencyTime, endLatencyTime;
         //var downloadSize = [82]; // Bytes for small latency test file
 
-        var imageAddr = "image.png" + "?n=" + Math.random();
+        var imageAddr = "image.gif" + "?n=" + Math.random();
         var downloadLatency = new Image();
             downloadLatency.src = imageAddr;
 
