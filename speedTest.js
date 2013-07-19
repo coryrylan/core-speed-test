@@ -58,14 +58,12 @@
         $("#SpeedTest").html("<i class=\"icon-refresh icon-spin\"></i>");
 
         var latencyDuration;
-        var startLatencyTime, endLatencyTime;
-        //var downloadSize = [82]; // Bytes for small latency test file
-
-        var imageAddr = "image.gif" + "?n=" + Math.random();
+        var startLatencyTime = (new Date()).getTime();
+        var endLatencyTime;
+        var imageAddr = "image.gif" + "?n=" + Math.random(); // Break cache on each test
         var downloadLatency = new Image();
             downloadLatency.src = imageAddr;
 
-        startLatencyTime = (new Date()).getTime();
         downloadLatency.onload = function () {
             endLatencyTime = (new Date()).getTime();
             latencyDuration = (endLatencyTime - startLatencyTime) / 1000;
