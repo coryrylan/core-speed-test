@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 
     function getDownloadSpeed() {
-        var imageAddr = "image2.jpg" + "?n=" + Math.random();
+        var imageAddr = "imageLarge.jpg" + "?n=" + Math.random();
         var download = new Image();
             download.src = imageAddr;
 
@@ -40,9 +40,8 @@ $(document).ready(function () {
 
         var latencyDuration;
         var startLatencyTime, endLatencyTime;
-        //var downloadSize = [82]; // Bytes for small latency test file
 
-        var imageAddr = "image.png" + "?n=" + Math.random();
+        var imageAddr = "imageSmall.gif" + "?n=" + Math.random();
         var downloadLatency = new Image();
             downloadLatency.src = imageAddr;
 
