@@ -1,27 +1,32 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="SpeedTest">
 <head>
     <title>Speed Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="speedTest.css" rel="stylesheet" />
+    <link href="app.css" rel="stylesheet" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="formBox">
+    <section class="form-box" ng-controller="TestCtrl">
         <h1>Speed Test</h1>
         <div class="results">
-            <span class="latencyLabel">Rough Start Latency:</span>
-            <p id="StartLatency"></p>
+            <span class="latency-label">Rough Start Latency:</span>
+            <p id="StartLatency">{{startLatency}}s</p>
 
-            <span class="speedLabel">Rough Connection Speed:</span>
-            <p id="DownloadSpeed"></p>
-            <p id="EstimatedDownloadSpeed"></p>
+            <span class="speed-label">Rough Connection Speed:</span>
+            <p id="DownloadSpeed">
+                <span>{{speedBps}} bps</span><br />
+                <span>{{speedKbps}} kbps</span><br />
+                <span>{{speedMbps}} mbps</span><br />
+            </p>
         </div>
-        <button id="SpeedTest" class="speedTest">Test</button>
-        <a href="https://github.com/splintercode/SpeedTest" target="_blank" class="gitRepo">Github Repo</a>
+        <br />
+        <button class="speed-test-btn" ng-click="startTest()" ng-bind-html="buttonText"></button>
+        <a href="https://github.com/splintercode/SpeedTest" target="_blank" class="git-repo">Github Repo</a>
     </section>
     <img width="1" height="1" title="" alt="" src="data:image/gif;base64,R0lGODlhAQABAID/AP///wAAACwAAAAAAQABAAACAkQBADs=" />
-    <script src="jquery.2.0.2.js"></script>
-    <script src="speedTest.js"></script>
+    <!--<script src="jquery.2.0.2.js"></script>-->
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

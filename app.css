@@ -1,0 +1,84 @@
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box;
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box; }
+
+body {
+  color: #FFF;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  background-color: #CCC; }
+
+h1 {
+  text-align: center;
+  padding: 1% 0%;
+  width: 100%;
+  background-color: #0EA353;
+  margin: 0px; }
+
+p {
+  margin: 1%;
+  min-height: 75px;
+  font-size: 1.2em; }
+
+.speed-test-btn {
+  cursor: pointer;
+  width: 100%;
+  background-color: #FFD24D;
+  border-left: none;
+  border-top: none;
+  border-bottom: 3px solid #E5BD46;
+  border-right: 3px solid #E5BD46;
+  font-size: 1.7em;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+  .speed-test-btn:hover {
+    background-color: #FFDC60; }
+  .speed-test-btn:active {
+    background-color: #E3C456;
+    border-bottom: 3px solid #D1B44F;
+    border-right: 3px solid #D1B44F; }
+
+.form-box {
+  width: 90%;
+  max-width: 350px;
+  background-color: #333333;
+  margin: 4% auto;
+  padding: 15px;
+  min-height: 320px;
+  border-radius: 2%;
+  overflow: auto; }
+
+.latency-label {
+  color: #48B1FF;
+  margin-top: 5%;
+  display: inline-block;
+  font-size: 1.4em; }
+
+.speed-label {
+  color: #F05444;
+  margin-top: 2%;
+  display: inline-block;
+  font-size: 1.4em; }
+
+.icon-load {
+  display: none; }
+
+img {
+  display: none; }
+
+.git-repo {
+  font-size: 1em;
+  color: #FFF;
+  float: right;
+  margin-top: 3%; }
+
+@media screen and (min-width: 35em) {
+  body {
+    font-size: 1.1em; } }
+
