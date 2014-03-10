@@ -19,16 +19,16 @@ app.controller('TestCtrl', function ($scope) {
     };
 
     function setSpeedValues() {
-        $scope.buttonText = 'Test Complete';
+        $scope.buttonText = 'Test';
         $scope.startLatency = coreSpeedTest.latencyTime();
         $scope.speedBps = coreSpeedTest.speedBps();
         $scope.speedKbps = coreSpeedTest.speedKbps();
         $scope.speedMbps = coreSpeedTest.speedMbps();
         $scope.$apply();
 
-        console.log("Configuring Download Speeds");
-        console.log($scope.speedBps + " Bps");
-        console.log($scope.speedKbps + " Kbps");
-        console.log($scope.speedMbps + " Mbps");
+        //console.log("Configuring Download Speeds");
+        //console.log($scope.speedBps + " Bps");
+        //console.log($scope.speedKbps + " Kbps");
+        //console.log($scope.speedMbps + " Mbps");
     }
 });
