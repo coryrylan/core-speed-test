@@ -13,12 +13,13 @@ where the code is hosted will effect the results.</p>
 <p>To more acurately test speeds two files are downloaded. 
    First a very small gif less than 35 byts to test latency times. 
    The second a 50kb jpg to test average download speed. </p>
-
+<pre>
 <code>
   coreSpeedTest.settings.latencyImage("imageSmall.gif");   // Set custom file to test latency speed  ( default 35 bytes img )
   coreSpeedTest.settings.downloadImage("imageLarge.jpg");  // Set custom file to test download speed ( default 50kb img )
-  coreSpeedTest.test();                             // Run Speed Test
+  coreSpeedTest.test();                                    // Run Speed Test
 </code>
+</pre>
   
   <p>Please feel free to offer sugestions or contribute. </p>
 
