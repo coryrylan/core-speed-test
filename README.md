@@ -10,7 +10,17 @@ There are many factors that contribute to connection speed. This should not be u
 application decisions. Also to note this gives a estimate speed based on the connection to server it is hosted on. Depending on 
 where the code is hosted will effect the results.</p>
 
-<p>Please feel free to offer sugestions or contribute. </p>
+<p>To more acurately test speeds two files are downloaded. 
+   First a very small gif less than 35 byts to test latency times. 
+   The second a 50kb jpg to test average download speed. </p>
+
+<code>
+  coreSpeedTest.settings.latencyImage("imageSmall.gif");   // Set custom file to test latency speed  ( default 35 bytes img )
+  coreSpeedTest.settings.downloadImage("imageLarge.jpg");  // Set custom file to test download speed ( default 50kb img )
+  coreSpeedTest.test();                             // Run Speed Test
+</code>
+  
+  <p>Please feel free to offer sugestions or contribute. </p>
 
 <h2>License</h2>
 <p>
