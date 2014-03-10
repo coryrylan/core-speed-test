@@ -1,6 +1,6 @@
 <h1>SpeedTest</h1>
 
-<a href="http://splintercode.github.io/SpeedTest/" target="_none">splintercode.github.io/SpeedTest/</a>
+<a href="http://splintercode.github.io/CoreSpeedTest/" target="_none">splintercode.github.io/CoreSpeedTest/</a>
 
 <p>Small experimental speed test tool using JavaScript<p>
 
