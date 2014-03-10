@@ -10,8 +10,8 @@ There are many factors that contribute to connection speed. This should not be u
 application decisions. Also to note this gives a estimate speed based on the connection to server it is hosted on. Depending on 
 where the code is hosted will effect the results.</p>
 
-<p>To more acurately test speeds two files are downloaded. 
-   First a very small gif less than 35 byts to test latency times. 
+<p>To more accurately test speeds two files are downloaded. 
+   First a very small gif less than 35 bytes to test latency times. 
    The second a 50kb jpg to test average download speed. </p>
 <pre>
 <code>
@@ -21,7 +21,7 @@ where the code is hosted will effect the results.</p>
 </code>
 </pre>
   
-  <p>Please feel free to offer sugestions or contribute. </p>
+  <p>Please feel free to offer suggestions or contribute. </p>
 
 <h2>License</h2>
 <p>
