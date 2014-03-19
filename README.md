@@ -15,14 +15,17 @@ where the code is hosted will effect the results.</p>
    The second a 50kb jpg to test average download speed. </p>
 <pre>
 <code>
-  coreSpeedTest.settings.latencyImage("imageSmall.gif");   // Set custom file to test latency speed  ( default 35 bytes img )
-  coreSpeedTest.settings.downloadImage("imageLarge.jpg");  // Set custom file to test download speed ( default 50kb img )
-  coreSpeedTest.test();                                    // Run Speed Test
+  // Core Speed Test must be run at document load or when new test data is desired.
+  coreSpeedTest.test();
 
+  // Get values from most recent test.
   coreSpeedTest.latencyTime();                             // Get startup latency time
   coreSpeedTest.speedBps();                                // Get Bps download speed
   coreSpeedTest.speedKbps();                               // Get Kbps download speed
   coreSpeedTest.speedMbps();                               // Get Mbps download speed
+
+  coreSpeedTest.settings.latencyImage("imageSmall.gif");   // Set custom file to test latency speed  ( default 35 bytes img )
+  coreSpeedTest.settings.downloadImage("imageLarge.jpg");  // Set custom file to test download speed ( default 50kb img )
 </code>
 </pre>
   
