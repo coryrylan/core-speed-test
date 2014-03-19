@@ -1,4 +1,8 @@
-﻿window.coreSpeedTest = (function () {
+﻿/*! Cory Bateman 2014
+    Core Speed Test
+    https://github.com/splintercode/CoreSpeedTest */
+
+window.coreSpeedTest = (function () {
     var _settings, _callback, _latencyTime = 0, _downloadTime, _speedbps = 0, _speedKbps = 0, _speedMbps = 0;
     var _downloadImage = 'imageLarge.jpg', _latencyImage = 'imageSmall.gif';
 
