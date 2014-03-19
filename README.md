@@ -16,6 +16,7 @@ where the code is hosted will effect the results.</p>
 <pre>
 <code>
   // Core Speed Test must be run at document load or when new test data is desired.
+  // Accepts callback for on test completion.
   coreSpeedTest.test();
 
   // Get values from most recent test.
