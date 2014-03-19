@@ -18,6 +18,11 @@ where the code is hosted will effect the results.</p>
   coreSpeedTest.settings.latencyImage("imageSmall.gif");   // Set custom file to test latency speed  ( default 35 bytes img )
   coreSpeedTest.settings.downloadImage("imageLarge.jpg");  // Set custom file to test download speed ( default 50kb img )
   coreSpeedTest.test();                                    // Run Speed Test
+
+  coreSpeedTest.latencyTime();                             // Get startup latency time
+  coreSpeedTest.speedBps();                                // Get Bps download speed
+  coreSpeedTest.speedKbps();                               // Get Kbps download speed
+  coreSpeedTest.speedMbps();                               // Get Mbps download speed
 </code>
 </pre>
   
